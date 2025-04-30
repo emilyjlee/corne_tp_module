@@ -5,8 +5,6 @@
  */
 
 #include "corne_tp.dtsi"
-#include <dt-bindings/zmk/input_transform.h>
-#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -340,7 +338,6 @@
         compatible = "zmk,input-listener-ps2";
         status = "disabled";
         device = <&mouse_ps2>;
-        input-processors = <&zip_xy_scaler 2 1>, <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 		// Some of the available settings depend on the keymap. So they
 		// are adjusted in...
 		// zmk-config/config/includes/mouse_tp.dtsi
