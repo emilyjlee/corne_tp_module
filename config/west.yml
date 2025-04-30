@@ -1,0 +1,5 @@
+manifest:
+  remotes:
+  projects:
+  self:
+    path: config
